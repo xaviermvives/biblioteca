@@ -1,0 +1,12 @@
+.nom-llibreria {
+    font-family: 'Neuton', serif;
+}
+
+.pencil-registre{
+    color: black;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+section {
+    margin-bottom: 15px;
+}
