@@ -10,3 +10,35 @@
 section {
     margin-bottom: 15px;
 }
+
+.main {
+    width: 15%;
+   
+}
+section#agenda{
+    background-color:#d9dbda;
+    padding-bottom: 15px
+}
+
+#agenda-sidebar {
+    border: 1px solid white;
+    padding: 5px 10px 10px 10px;
+}
+#agenda-sidebar h3 {
+    font-size: 1.5em;
+    font-style: italic;
+    color: red;
+}
+#agenda-sidebar p {
+    margin-bottom:0;
+}
+
+.agenda-link{
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+
+}
+.titol{
+    font-style:italic;
+}
