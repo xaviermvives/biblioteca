@@ -15,102 +15,124 @@
 </head>
 <body>
         <div class="container-fluid">
-                <div class="flex pt-2">
-                        <a href="#" class="pencil-registre d-flex justify-content-end" data-toggle="modal" data-target="#login">
-                            <i class="fas fa-user"> Accedeix</i>  
-                        </a>
-                </div>
-                    <!-- The Modal -->
-                <div class="modal" id="login">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
+
+                <div class="clearfix">
                 
-                        <!-- Modal Header -->
-                        <div class="modal-header">
-                        <h4 class="modal-title">Accedeix</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        </div>
+                    <div class="d-none d-xl-inline">
+                        <img src="img/logomig.png" alt="">
+                        <img src="img/logomig.png" alt="">
+                        <img src="img/logomig-final.JPG" alt="">
+                    </div>  
+
                 
-                        <!-- Modal body -->
-                        <div class="modal-body">
-                                <form action="" class="main-form">
-                                        <div class="form-group">
-                                            <label for="email">Email</label>
-                                            <input type="email" name="email" id="email" class="form-control">
-                                            <span id="mensajeErrorEmail" class="hint"></span>
-                                        </div> 
-                                        
-                                        <div class="form-group">
-                                            <label for="password">Password</label>
-                                            <input type="password" name="password" id="password" class="form-control">
-                                            <span id="mensajeErrorPassword" class="hint"></span>
-                                        </div>
-        
-                                        <button type="submit" id="enviar" class="btn btn-outline-primary">Submit</button>
-                                </form>
-        
-                        </div>
-                
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                        </div>
-                
+                    <div id="brand" class="float-left ml-sm-3">
+                        <img src="img/logo-petit.JPG" class="float-sm-left">
+                        <h1 class="nom-llibreria d-none d-sm-block">El Magatzem <br>de llibres</h1>
                     </div>
-                    </div>
-                </div>
-
-
-
-                <div class="flex pt-2">
-                    <a href="#registrat" class="pencil-registre d-flex justify-content-end">
-                        <i class="fa fa-pencil-alt" aria-hidden="true"> Registra't</i> 
-                    </a>
-                </div>
-
-                <div class="flex pt-2">
-                        <a href="#" class="pencil-registre d-flex justify-content-end" data-toggle="modal" data-target="#buscar">
-                            <i class="fa fa-search form-control-feedback" aria-hidden="true"> Buscar</i> 
-                        </a>
-                </div>
-                            <!-- Modal -->
-                <div class="modal fade" id="buscar" role="dialog">
-                        <div class="modal-dialog modal-sm">
-                            <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">BUSCAR</h4>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                
+                
+                
+                    <div class="modals-dreta float-right mr-sm-3">
+                        <div class="flex pt-2">
+                            <a href="#" class="pencil-registre d-flex justify-content-end" data-toggle="modal" data-target="#login">
+                                <i class="fas fa-user"> Accedeix</i>
+                            </a>
+                        </div>
+                        <!-- The Modal -->
+                        <div class="modal" id="login">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Accedeix</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <form action="" class="main-form">
+                                            <div class="form-group">
+                                                <label for="email">Email</label>
+                                                <input type="email" name="email" id="email" class="form-control">
+                                                <span id="mensajeErrorEmail" class="hint"></span>
+                                            </div>
+                
+                                            <div class="form-group">
+                                                <label for="password">Password</label>
+                                                <input type="password" name="password" id="password" class="form-control">
+                                                <span id="mensajeErrorPassword" class="hint"></span>
+                                            </div>
+                
+                                            <button type="submit" id="enviar" class="btn btn-outline-primary">Submit</button>
+                                        </form>
+                
+                                    </div>
+                
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    </div>
+                
+                                </div>
                             </div>
-                            <div class="modal-body"> 
-                                    <form action="" method="get"  class="main-form">            
+                        </div>
+                
+                
+                
+                        <div class="flex pt-2">
+                            <a href="#registrat" class="pencil-registre d-flex justify-content-end">
+                                <i class="fa fa-pencil-alt" aria-hidden="true"> Registra't</i>
+                            </a>
+                        </div>
+                
+                        <div class="flex pt-2">
+                            <a href="#" class="pencil-registre d-flex justify-content-end" data-toggle="modal" data-target="#buscar">
+                                <i class="fa fa-search form-control-feedback" aria-hidden="true"> Buscar</i>
+                            </a>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="buscar" role="dialog">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">BUSCAR</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="" method="get" class="main-form">
                                             <div class="form-group">
                                                 <label for="buscar"></label>
                                                 <span id="mysearchhint" class="hint"></span>
-                                                <input type="search" name="buscar" id="buscar" class="form-control" min="4" var result = selectElt.checkValidity();required>
-                                            </div> 
+                                                <input type="search" name="buscar" id="buscar" class="form-control" min="4" var
+                                                    result=selectElt.checkValidity();required>
+                                            </div>
                                             <button type="submit" id="enviar" class="btn btn-outline-primary">Buscar</button>
-                                    </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                </div><!--end myModal-->
-    
-    
+                        <!--end myModal-->
+                
+                    </div>
+                    <!--end modals-dreta-->
+                
+                </div>
+                <!--end clearfix-->
 
 
 
                
-        
-            <img src="img/logo-petit.JPG" class="float-sm-left">
-            <h1 class="nom-llibreria d-none d-sm-block">El Magatzem <br>de llibres</h1>
+            
         </div><!--end container fluid-->
         
 
         <nav class="navbar navbar-expand-sm bg-light">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ml-sm-3">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Inici</a>
                 </li>
