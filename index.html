@@ -11,10 +11,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Neuton&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/65cb952072.js"></script>
-    <!--validacio forms-->
-    <script src="buscar-validacio.js"></script>
-    <script src="validarEmail.js"></script>
-    <script src="validarRegistre.js"></script>
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -53,18 +49,18 @@
                                     <div class="modal-body">
                                         <form action="" class="main-form">
                                             <div class="form-group">
-                                                <label for="email">Email</label>
-                                                <input type="email" name="email" id="email" class="form-control">
-                                                <span id="mensajeErrorEmail" class="hint"></span>
+                                                <label for="emailLogin">Email</label>
+                                                <input type="email" name="email" id="emailLogin" class="form-control">
+                                                <span id="mensajeErrorEmail1" class="hint"></span>
                                             </div>
                 
                                             <div class="form-group">
-                                                <label for="password">Password</label>
-                                                <input type="password" name="password" id="password" class="form-control">
+                                                <label for="passwordLogin">Password</label>
+                                                <input type="password" name="password" id="passwordLogin" class="form-control">
                                                 <span id="mensajeErrorPassword" class="hint"></span>
                                             </div>
                 
-                                            <button type="submit" id="enviar" class="btn btn-outline-primary">Submit</button>
+                                            <button type="submit" id="enviarLogin" class="btn btn-outline-primary">Submit</button>
                                         </form>
                 
                                     </div>
@@ -87,12 +83,12 @@
                         </div>
                 
                         <div class="flex pt-2">
-                            <a href="#" class="pencil-registre d-flex justify-content-end" data-toggle="modal" data-target="#buscar">
+                            <a href="#" class="pencil-registre d-flex justify-content-end" data-toggle="modal" data-target="#buscarModal">
                                 <i class="fa fa-search form-control-feedback" aria-hidden="true"> Buscar</i>
                             </a>
                         </div>
                         <!-- Modal -->
-                        <div class="modal fade" id="buscar" role="dialog">
+                        <div class="modal fade" id="buscarModal" role="dialog">
                             <div class="modal-dialog modal-sm">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -107,7 +103,7 @@
                                                 <input type="search" name="buscar" id="buscar" class="form-control" min="4" var
                                                     result=selectElt.checkValidity();required>
                                             </div>
-                                            <button type="submit" id="enviar" class="btn btn-outline-primary">Buscar</button>
+                                            <button type="submit" id="enviarSearch" class="btn btn-outline-primary">Buscar</button>
                                         </form>
                                     </div>
                                     <div class="modal-footer">
@@ -364,8 +360,8 @@
                     <div class="col-md-8">
                         <form action="" class="main-form text-left" id="myForm">
                                 <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="email" name="email" id="email" class="form-control" />
+                                    <label for="emailRegistre">Email</label>
+                                    <input type="email" name="email" id="emailRegistre" class="form-control" />
                                     <span id="mensajeErrorEmail" class="hint"></span>
                                 </div> 
                                 <div class="form-group">
@@ -391,7 +387,7 @@
                                     <input type="checkbox" id="accept-terms" class="form-check-input">
                                     <label for="accept-terms" class="form-check-label">Accept Terms &amp; Conditions</label>
                                 </div>
-                                <button type="submit" id="enviar" class="btn btn-outline-primary">Submit</button>
+                                <button type="submit" id="enviarRegistre" class="btn btn-outline-primary">Submit</button>
                             </form>
                     </div>
                 </div><!--end row-->
@@ -454,5 +450,11 @@
     
         </div>
     
+
+    <!--validacio forms-->
+    
+    
+    <script src="js/validacio.js"></script>
+
 </body>
 </html>
